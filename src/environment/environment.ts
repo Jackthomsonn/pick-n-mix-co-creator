@@ -1,3 +1,3 @@
 export const Environment = {
-  API_URI: 'http://7f3f9bb84efb.ngrok.io'
+  API_URI: 'http://03ebea35ac30.ngrok.io'
 }
