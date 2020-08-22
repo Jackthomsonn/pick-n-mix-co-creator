@@ -30,6 +30,11 @@ export function SweetSelector({ id, quantity }) {
       if (changeEvent.type === 'checkValidity') {
         setFormValidity(changeEvent.value);
       }
+
+      if (changeEvent.type === 'resetSweetSelections') {
+        setTimesClicked(0);
+        setFormValidity(changeEvent.value);
+      }
     });
   });
 

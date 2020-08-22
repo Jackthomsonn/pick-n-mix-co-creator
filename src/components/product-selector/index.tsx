@@ -46,7 +46,7 @@ export function ProductSelector() {
         borderRadius: 4,
         marginLeft: 24
       }}>
-        <Text style={{ color: selectedId === item.stripeProductReference ? '#FFF' : 'rgba(255, 98, 163, 1)', }}>{item.weight === 500 ? '500g' : '1kg'}</Text>
+        <Text style={{ color: selectedId === item.stripeProductReference ? '#FFF' : 'rgba(255, 98, 163, 1)', }}>{item.weight === 500 ? `500g (£${ item.price / 100 })` : `1kg (£${ item.price / 100 })`}</Text>
       </TouchableOpacity>
     )
   }
